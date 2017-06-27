@@ -1,0 +1,28 @@
+$principal : #ffffff;
+$background: #22334a;
+$base: 16px;
+$family-mono: monospace;
+body{
+    background: $background;
+    font-size: $base;
+}
+
+.box{
+    border:2px dashed $principal;
+    width: 200px;
+    color: $principal;
+    a{
+        color: lightgreen;
+        font-size: 2.5 * $base;
+        span{
+            font-size: 5 * $base;
+            font-weight: bold;
+        }
+    }
+    @media(max-width:400px){
+        .box{
+            background: #fff;
+            color: $principal;
+        }
+    }
+}
